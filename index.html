@@ -23,17 +23,29 @@
         <!-- Top-bar -->
         <div class="flex flex-col items-center justify-center lg:flex-row">
           <ul class="lg:flex flex-row w-full justify-end">
-            <li class="py-2 transition-all hover:text-amber-300 lg:p-4">
-              Vector
+            <li class="py-2 transition-all hover:text-amber-300 lg:p-4 group">
+              <a href="#">Vector</a>
+              <div
+                class="border-b-2 w-full opacity-0 group-hover:opacity-100 transition-all"
+              ></div>
             </li>
-            <li class="py-2 transition-all hover:text-amber-300 lg:p-4">
-              Illustrations
+            <li class="py-2 transition-all hover:text-amber-300 lg:p-4 group">
+              <a href="#">Illustrations</a>
+              <div
+                class="border-b-2 w-full opacity-0 group-hover:opacity-100 transition-all"
+              ></div>
             </li>
-            <li class="py-2 transition-all hover:text-amber-300 lg:p-4">
-              Images
+            <li class="py-2 transition-all hover:text-amber-300 lg:p-4 group">
+              <a href="#">Gallery</a>
+              <div
+                class="border-b-2 w-full opacity-0 group-hover:opacity-100 transition-all"
+              ></div>
             </li>
-            <li class="py-2 transition-all hover:text-amber-300 lg:p-4">
-              Icons
+            <li class="py-2 transition-all hover:text-amber-300 lg:p-4 group">
+              <a href="#">Icons</a>
+              <div
+                class="border-b-2 w-full opacity-0 group-hover:opacity-100 transition-all"
+              ></div>
             </li>
           </ul>
         </div>
@@ -61,13 +73,29 @@
         </div>
         <!-- Gallery -->
         <div class="lg:flex flex-row flex-wrap lg:w-full">
-          <div class="relative flex items-center">
+          <!-- Img1 -->
+          <div class="relative flex items-center group">
             <img
               src="images/image1.jpg"
               alt="images1"
               class="w-64 my-2 rounded-xl lg:m-4"
             />
+            <!-- Hideen Content -->
+            <div
+              class="absolute bottom-0 left-4 flex justify-between items-center opacity-0 group-hover:opacity-100 transition-all text-white w-64"
+            >
+              <div
+                class="flex bg-gray-200 text-black w-full items-center justify-between"
+              >
+                <div>
+                  <p class="text-sm">Abstract Painting</p>
+                  <span class="text-sm">245 likes - 35 Share</span>
+                </div>
+                <i class="fa-regular fa-bookmark mr-2"></i>
+              </div>
+            </div>
           </div>
+          <!-- Img2 -->
           <img
             src="images/image2.jpg"
             alt="images2"
